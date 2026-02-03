@@ -1,0 +1,215 @@
+JAVA PROGRAMMING ASSIGNMENT – 2
+
+
+•	PART A – THEORY QUESTIONS
+
+
+1. What are classes and objects in Java?
+
+	Class in java is like a Blue print which can describe the all program 
+	additionaly the Class is the user difine data type with mins its used by according to the use requrments
+	Calsss key word used to declare the class type. 
+	Class has no requirement of memory 
+	Class is create only once in a program 
+
+
+	Object is the real entity . which is create with the help of  class blue print
+	We can create the multipal object with the help of same class. 
+	When every the object is created at that time memory is allocated.
+	Object can create multiple time in program 
+
+
+
+
+2. What is the difference between primitive and reference data types?
+	Primitive date type is  a actule value 
+	The example of primitive date type is a Int, char, long , dubble, float ,bite,short.
+	primitive date pass by value.
+
+
+	Reference data its give a Address of the data not give a actule value.
+	When we update any value in the  main the its also update just because of adreess 
+	The example of reference date type is Array, string , Class. And eytc.
+
+
+3.What are access modifiers in Java?
+	The access modifiers in java thay can control the variable , class, and importantly method
+	The access modifiers are control the  cod and help to fare used of code 
+	Thare are four type of access modifiers in java private ,protector, default, public 
+	This four access modifiers give a different diferrent type of control and protection .
+4 Explain the concept of encapsulation?
+	Encapsulation is the function in that the we can hide the date with the help of different access modifier 
+	We can access the data with the help of gatters and seters 
+	Data can making private with the used of private 
+
+
+
+5 What is inheritance and why is it used?
+	In java language inheritance is the most important concept with the help of inheritance  we can used the method and properts in one class to second class. 
+	The class who’s property is reflact in different class so its called the super calss or a parant class.
+	And the properts thors reflatc in which class its called a child class or subclass.
+
+
+
+•	PART B – PROGRAMMING QUESTIONS
+
+
+
+1 Write a program to check if a number is positive, negative, or zero.
+package demo;
+import java.util.*; 
+public class classWork{
+		public static void main(String[] args) {
+			
+			Scanner sc= new Scanner(System.in); 
+			System.out.println("=====ENTER THE NUMBER=====");
+			int a = sc.nextInt(); 
+			
+			if (a>0) 
+			System.out.println("=====THE NUMBER IS POSITIVE=====");
+			
+			else if (a==0) 
+			System.out.println("=====THE NUMBER IS NUTURAL zero/=====");
+		
+			else 
+				System.out.println("=====THE NUMBER IS NIGITIVE =====");	
+}
+}
+
+
+
+2. Write a program to swap two numbers without using a third variable.
+
+package demo;
+import java.util.*; 
+public class timepass{
+		public static void main(String[] args) {
+			
+			Scanner sc= new Scanner(System.in); 
+			System.out.println("=====ENTER THE NUMBER=====");
+			int a = sc.nextInt();
+			int b=sc.nextInt(); 
+			
+			a=a*b; 
+			b=a/b; 
+			a=a/b;
+			
+			System.out.println((a) +"  "+(b));
+			
+			}
+ }
+3 Write a program to find the factorial of a number using loop.
+package demo;
+import java.util.*; 
+public class classWork{
+		public static void main(String[] args) {
+			Scanner sc= new Scanner(System.in); 
+			System.out.println("ENTHER THE VALUE ");
+			int a = sc.nextInt(); 
+
+		        int factorial = 1;
+
+		        for (int i = 1; i <= a; i++) {
+		            factorial = factorial * i;
+		        }
+
+		        System.out.println("Factorial of " + a + " is: " + factorial);
+			
+	
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+4 Write a program to print Fibonacci series up to n terms.
+package demo;
+import java.util.*; 
+public class timepass{
+			public static void main(String[] args) { 
+		        Scanner sc = new Scanner(System.in); 
+		 
+		        System.out.print("=====ENTER THE NUMBER====="); 
+		        int n = sc.nextInt(); 
+		 
+		        int a = 0, b = 1; 
+		         
+		            System.out.println("=====Fibonacci series====="); 
+		            for (int i = 0; i < n; i++) { 
+		                System.out.print(a + " "); 
+		                int next = a + b; 
+		                a = b; 
+		                b = next; 
+		            } 
+		        } 
+		}
+
+
+
+
+
+
+
+
+
+
+5 Write a program to reverse a number.
+
+package demo;
+import java.util.*; 
+public class classwork{
+		public static void main(String[] args) {
+			Scanner sc= new Scanner(System.in);
+			System.out.println("=====ENTHER THE NUMBNER=====");
+			 int num =sc.nextInt(); 
+		        int reverse = 0;
+
+		     while (num != 0) {
+		            int digit = num % 10;
+		            reverse = reverse * 10 + digit;
+		            num = num / 10;
+		        }
+
+		        System.out.println("Reversed number is: " + reverse);
+	
+}
+}
+
+
+6 Write a program to check if a number is palindrome.
+package demo;
+import java.util.*; 
+public class timepass{
+	public static void main(String[] args){ 
+		 Scanner sc = new Scanner (System.in); 
+		   
+		  int temp,n,rev=0; 
+		  System.out.println("=====ENTER THE NUMBER====="); 
+		 n= sc.nextInt(); 
+		  
+		   temp=n; 
+		 while(n>0){ 
+		 
+		  int rem =n%10; 
+		 rev = rev*10+rem; 
+		 n=n/10; 
+		 }  
+		 
+		   if(rev == temp) 
+		 System.out.println("=====IT IS A PALINDROM====="); 
+		 
+		 else 
+		 System.out.println("=====IT NOT A PALINDROM====="); 
+		 
+		            } 
+		        } 
+		
+
+
